@@ -1,0 +1,9 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - build/**
+    - android/**
+    - .local-tools/**
+    - .local-build-cache/**
+    - .s1-work/**

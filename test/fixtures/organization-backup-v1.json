@@ -1,0 +1,36 @@
+{
+  "format": "phototree-organization-backup",
+  "version": 1,
+  "folders": [
+    {"id": "f1", "parent": "root", "name": "旅行"},
+    {"id": "f2", "parent": "f1", "name": "亚洲"},
+    {"id": "f3", "parent": "f2", "name": "中国"},
+    {"id": "f4", "parent": "f3", "name": "四川"},
+    {"id": "f5", "parent": "f4", "name": "成都"},
+    {"id": "empty", "parent": "root", "name": "空文件夹"}
+  ],
+  "albums": [
+    {"id": "a1", "sourceKey": "external_primary:DCIM/Camera/", "name": "Camera", "directory": "DCIM/Camera/", "pending": false},
+    {"id": "a2", "sourceKey": "external_primary:Pictures/Hidden/", "name": null, "directory": null, "pending": false},
+    {"id": "a3", "sourceKey": "external_primary:Pictures/RootHidden/", "name": null, "directory": null, "pending": false},
+    {"id": "a4", "sourceKey": null, "name": "旧设备待关联", "directory": "Pictures/Old/", "pending": true}
+  ],
+  "placements": [
+    {"albumId": "a1", "parent": "f5"},
+    {"albumId": "a2", "parent": "f5"},
+    {"albumId": "a4", "parent": "f1"}
+  ],
+  "folderOrders": [
+    {"parent": "root", "ids": ["empty", "f1"]},
+    {"parent": "empty", "ids": []}
+  ],
+  "albumOrders": [
+    {"parent": "root", "ids": ["a3"]},
+    {"parent": "f5", "ids": ["a2", "a1"]},
+    {"parent": "empty", "ids": []}
+  ],
+  "favorites": [
+    {"identity": "[\"external_primary\",1,\"source-device-library\",10,10000,200,300]", "albumId": "a1", "filename": "photo.jpg", "fingerprint": {"size": 1234, "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}, "unresolvedReason": null},
+    {"identity": "[\"external_primary\",2,\"old-device-library\",20,20000,200,300]", "albumId": "a2", "filename": null, "fingerprint": null, "unresolvedReason": "not-accessible"}
+  ]
+}

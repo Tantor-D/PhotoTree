@@ -1,0 +1,37 @@
+name: phototree
+description: "Offline Android photo and video organizer with nested album folders."
+repository: https://github.com/Tantor-D/PhotoTree
+publish_to: 'none'
+version: 0.3.12+87
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  photo_manager: 3.12.0
+  sqflite: 2.4.4
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  video_player: 2.14.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: 6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/Inter-OFL.txt
+    - assets/fonts/NotoSansSC-OFL.txt
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/InterVariable.ttf
+    - family: Noto Sans SC
+      fonts:
+        - asset: assets/fonts/NotoSansSC-VF.ttf

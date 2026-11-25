@@ -1,0 +1,12 @@
+.dart_tool/
+.flutter-plugins*
+build/
+.gradle/
+.local-build-cache/
+android/local.properties
+android/key.properties
+*.jks
+*.keystore
+.idea/
+*.iml
+.DS_Store
